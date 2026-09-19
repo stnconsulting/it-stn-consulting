@@ -38,7 +38,19 @@ jobs:
 
       - name: Build application
         run: npm run build
-      
+      - name: Prepare route pages
+        run: |
+          for route in \
+            impressum \
+            datenschutz \
+            projekte \
+            leistungen \
+            ueber-uns \
+            kontakt \
+          ; do
+            cp dist/index.html dist/$route.html
+          done
+
       - name: Verify build
         run: |
           echo "=== DIST CONTENT ==="
@@ -48,6 +60,14 @@ jobs:
           sed -n '1,20p' dist/index.html
           test -f dist/404.html
           sed -n '1,20p' dist/404.html
+          echo "=== ROUTES ==="
+          test -f dist/index.html
+          test -f dist/impressum/index.html
+          test -f dist/datenschutz/index.html
+          test -f dist/projekte/index.html
+          test -f dist/leistungen/index.html
+          test -f dist/ueber-uns/index.html
+          test -f dist/kontakt/index.html
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v6
