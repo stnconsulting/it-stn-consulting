@@ -33,6 +33,13 @@ jobs:
 
       - name: Build application
         run: npm run build
+      
+      - name: Check dist
+        run: |
+            echo "Checking contents of the dist directory:"
+            find dist -maxdepth 3 -type f -print
+            echo "=== INDEX ==="
+            ls -la ./dist/index.html
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
