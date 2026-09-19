@@ -8,6 +8,8 @@ on:
 # Autorisations requises pour déployer sur GitHub Pages
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -29,8 +31,19 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: dist
-          branch: main
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+ #     - name: Deploy to GitHub Pages
+  #      uses: JamesIves/github-pages-deploy-action@v4
+  #      with:
+  #        folder: dist
+  #        branch: main
