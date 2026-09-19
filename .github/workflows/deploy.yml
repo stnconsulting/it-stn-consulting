@@ -38,7 +38,8 @@ jobs:
 
       - name: Build application
         run: npm run build
-
+      - name: Prepare SPA fallback
+        run: cp dist/index.html dist/404.html
       - name: Verify build
         run: |
           echo "=== DIST CONTENT ==="
@@ -46,6 +47,8 @@ jobs:
           echo "=== INDEX ==="
           test -f dist/index.html
           sed -n '1,20p' dist/index.html
+          test -f dist/404.html
+          sed -n '1,20p' dist/404.html
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v6
