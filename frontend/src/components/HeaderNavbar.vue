@@ -2,6 +2,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { theme } from '../theme'
+import { RouterLink } from 'vue-router'
 
 defineProps<{
   logoText?: string
@@ -17,24 +18,24 @@ const toggleMenu = () => {
 <template>
   <header class="lise-header">
     <div class="lise-container lise-header__inner">
-      <a href="#" class="lise-header__logo">
+      <RouterLink to="/" class="lise-header__logo">
         {{ logoText || 'beispiel GmbH' }}
-      </a>
+      </RouterLink>
 
       <!-- Navigation Desktop & Mobile -->
       <nav class="lise-nav" :class="{ 'lise-nav--open': isMenuOpen }">
         <ul class="lise-nav__list">
           <li class="lise-nav__item">
-            <a href="/leistungen" class="lise-nav__link" @click="isMenuOpen = false">Leistungen</a>
+            <RouterLink to="/leistungen" class="lise-nav__link" @click="isMenuOpen = false">Leistungen</RouterLink>
           </li>
           <li class="lise-nav__item">
-            <a href="/projekte" class="lise-nav__link" @click="isMenuOpen = false">Projekte</a>
+            <RouterLink to="/projekte" class="lise-nav__link" @click="isMenuOpen = false">Projekte</RouterLink>
           </li>
           <li class="lise-nav__item">
-            <a href="/ueber-uns" class="lise-nav__link" @click="isMenuOpen = false">Über uns</a>
+            <RouterLink to="/ueber-uns" class="lise-nav__link" @click="isMenuOpen = false">Über uns</RouterLink>
           </li>
           <li class="lise-nav__item">
-            <a href="/kontakt" class="lise-nav__link lise-btn lise-btn--nav" @click="isMenuOpen = false">Kontakt</a>
+            <RouterLink to="/kontakt" class="lise-nav__link lise-btn lise-btn--nav" @click="isMenuOpen = false">Kontakt</RouterLink>
           </li>
         </ul>
       </nav>

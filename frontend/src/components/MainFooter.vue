@@ -1,6 +1,7 @@
 <!-- src/components/MainFooter.vue -->
 <script setup lang="ts">
 import { theme } from '@/theme'
+import { RouterLink } from 'vue-router'
 
 defineProps<{
   companyName?: string
@@ -14,9 +15,9 @@ const currentYear = new Date().getFullYear()
     <div class="lise-container lise-footer__grid">
       <!-- Colonne 1: Infos Entreprise -->
       <div class="lise-footer__col">
-        <a href="#" class="lise-footer__logo">
+        <RouterLink to="/" class="lise-footer__logo">
           {{ companyName || 'lise GmbH' }}
-        </a>
+        </RouterLink>
         <p class="lise-footer__desc">
           Consulting IT & Digitalisierung Projekte Handeln für Ihren Erfolg.
         </p>
@@ -26,10 +27,10 @@ const currentYear = new Date().getFullYear()
       <div class="lise-footer__col">
         <h4 class="lise-footer__title">Navigation</h4>
         <ul class="lise-footer__links">
-          <li><a href="/leistungen" class="lise-footer__link">Leistungen</a></li>
-          <li><a href="/projekte" class="lise-footer__link">Projekte</a></li>
-          <li><a href="/ueber-uns" class="lise-footer__link">Über uns</a></li>
-          <li><a href="/kontakt" class="lise-footer__link">Kontakt</a></li>
+          <li><RouterLink to="/leistungen" class="lise-footer__link">Leistungen</RouterLink></li>
+          <li><RouterLink to="/projekte" class="lise-footer__link">Projekte</RouterLink></li>
+          <li><RouterLink to="/ueber-uns" class="lise-footer__link">Über uns</RouterLink></li>
+          <li><RouterLink to="/kontakt" class="lise-footer__link">Kontakt</RouterLink></li>
         </ul>
       </div>
 
@@ -37,9 +38,9 @@ const currentYear = new Date().getFullYear()
       <div class="lise-footer__col">
         <h4 class="lise-footer__title">Rechtliches</h4>
         <ul class="lise-footer__links">
-          <li><a href="/impressum" class="lise-footer__link">Impressum</a></li>
-          <li><a href="/datenschutz" class="lise-footer__link">Datenschutz</a></li>
-          <li><a href="/agb" class="lise-footer__link">AGB</a></li>
+          <li><RouterLink to="/impressum" class="lise-footer__link">Impressum</RouterLink></li>
+          <li><RouterLink to="/datenschutz" class="lise-footer__link">Datenschutz</RouterLink></li>
+          <li><RouterLink to="/agb" class="lise-footer__link">AGB</RouterLink></li>
         </ul>
       </div>
     </div>
