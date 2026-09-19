@@ -48,7 +48,8 @@ jobs:
             ueber-uns \
             kontakt \
           ; do
-            cp dist/index.html dist/$route.html
+            mkdir -p "dist/$route"
+            cp dist/index.html dist/$route/index.html
           done
 
       - name: Verify build
