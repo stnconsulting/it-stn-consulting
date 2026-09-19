@@ -5,14 +5,16 @@ on:
     branches:
       - main
 
+# Autorisations requises pour déployer sur GitHub Pages
 permissions:
   contents: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -21,10 +23,10 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Build project
+      - name: Build Project
         run: npm run build
 
       - name: Deploy to GitHub Pages
