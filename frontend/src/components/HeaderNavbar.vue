@@ -19,7 +19,7 @@ const toggleMenu = () => {
   <header class="lise-header">
     <div class="lise-container lise-header__inner">
       <RouterLink to="/" class="lise-header__logo">
-        {{ logoText || 'beispiel GmbH' }}
+        {{ logoText || 'STN ENTERPRISES GmbH' }}
       </RouterLink>
 
       <!-- Navigation Desktop & Mobile -->

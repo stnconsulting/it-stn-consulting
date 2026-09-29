@@ -15,7 +15,7 @@ import MainFooter from '@/components/MainFooter.vue'
         <div class="lise-container">
           <h1 class="lise-agb-hero__title">Allgemeine Geschäftsbedingungen</h1>
           <p class="lise-agb-hero__subtitle">
-            AGB für IT-Dienstleistungen und Softwareentwicklung der lise GmbH
+            AGB für IT-Dienstleistungen und Softwareentwicklung der STN ENTERPRISES GmbH
           </p>
         </div>
       </section>
@@ -29,7 +29,7 @@ import MainFooter from '@/components/MainFooter.vue'
             <article class="lise-agb-block">
               <h2>§ 1 Geltungsbereich & Vertragspartner</h2>
               <p>
-                (1) Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge, Dienstleistungen und Angebote der <strong>lise GmbH</strong> (Märkischer Ring 92, 58097 Hagen, nachfolgend „Auftragnehmer“ genannt) gegenüber ihren Vertragspartnern (nachfolgend „Auftraggeber“ genannt).
+                (1) Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge, Dienstleistungen und Angebote der <strong>STN ENTERPRISES GmbH</strong> (Märkischer Ring 92, 58097 Hagen, nachfolgend „Auftragnehmer“ genannt) gegenüber ihren Vertragspartnern (nachfolgend „Auftraggeber“ genannt).
               </p>
               <p>
                 (2) Diese AGB gelten ausschließlich gegenüber Unternehmern im Sinne des § 14 BGB, juristischen Personen des öffentlichen Rechts oder öffentlich-rechtlichen Sondervermögen.
@@ -107,7 +107,7 @@ import MainFooter from '@/components/MainFooter.vue'
       </section>
     </main>
 
-    <MainFooter companyName="lise GmbH" />
+    <MainFooter companyName="STN ENTERPRISES GmbH" />
   </div>
 </template>
 

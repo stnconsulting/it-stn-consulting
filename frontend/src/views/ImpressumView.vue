@@ -28,7 +28,7 @@ import MainFooter from '@/components/MainFooter.vue'
             <article class="lise-impressum-block">
               <h2>Diensteanbieter</h2>
               <p>
-                <strong>lise GmbH</strong><br />
+                <strong>STN ENTERPRISES GmbH</strong><br />
                 Märkischer Ring 92<br />
                 58097 Hagen<br />
                 Deutschland
@@ -82,7 +82,7 @@ import MainFooter from '@/components/MainFooter.vue'
       </section>
     </main>
 
-    <MainFooter companyName="lise GmbH" />
+    <MainFooter companyName="STN ENTERPRISES GmbH" />
   </div>
 </template>
 

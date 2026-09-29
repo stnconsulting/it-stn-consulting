@@ -39,7 +39,7 @@ import MainFooter from '@/components/MainFooter.vue'
               <h2>2. Verantwortliche Stelle</h2>
               <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
               <div class="lise-address-box">
-                <strong>lise GmbH</strong><br />
+                <strong>STN ENTERPRISES GmbH</strong><br />
                 Märkischer Ring 92<br />
                 58097 Hagen<br />
                 Deutschland<br /><br />
@@ -106,7 +106,7 @@ import MainFooter from '@/components/MainFooter.vue'
       </section>
     </main>
 
-    <MainFooter companyName="lise GmbH" />
+    <MainFooter companyName="STN ENTERPRISES GmbH" />
   </div>
 </template>
 

@@ -135,7 +135,7 @@ const filteredProjects = computed(() => {
       </section>
     </main>
 
-    <MainFooter companyName="lise GmbH" />
+    <MainFooter companyName="STN ENTERPRISES GmbH" />
   </div>
 </template>
 

@@ -16,7 +16,7 @@ const currentYear = new Date().getFullYear()
       <!-- Colonne 1: Infos Entreprise -->
       <div class="lise-footer__col">
         <RouterLink to="/" class="lise-footer__logo">
-          {{ companyName || 'lise GmbH' }}
+          {{ companyName || 'STN ENTERPRISES GmbH' }}
         </RouterLink>
         <p class="lise-footer__desc">
           Consulting IT & Digitalisierung Projekte Handeln für Ihren Erfolg.
@@ -49,7 +49,7 @@ const currentYear = new Date().getFullYear()
     <div class="lise-footer__bottom">
       <div class="lise-container">
         <p class="lise-footer__copyright">
-          &copy; {{ currentYear }} {{ companyName || 'lise GmbH' }}. Alle Rechte vorbehalten.
+          &copy; {{ currentYear }} {{ companyName || 'STN ENTERPRISES GmbH' }}. Alle Rechte vorbehalten.
         </p>
       </div>
     </div>

@@ -1,6 +1,11 @@
 <!-- src/views/LeistungenView.vue -->
 <script setup lang="ts">
 import { theme } from '@/theme'
+import type { Component } from 'vue'
+import SoftwareIcon from '@/icons/SoftwareIcon.vue'
+import CloudIcon from '@/icons/CloudIcon.vue'
+import UiIcon from '@/icons/UiIcon.vue'
+import ItIcon from '@/icons/ItIcon.vue'
 import HeaderNavbar from '@/components/HeaderNavbar.vue'
 import MainFooter from '@/components/MainFooter.vue'
 
@@ -8,7 +13,7 @@ interface Service {
   id: string
   title: string
   description: string
-  icon: string
+  icon: Component
   features: string[]
 }
 
@@ -17,28 +22,28 @@ const services: Service[] = [
     id: 'custom-software',
     title: 'Individuelle Softwareentwicklung',
     description: 'Maßgeschneiderte Web- und Backend-Anwendungen, die exakt auf Ihre Geschäftsprozesse abgestimmt sind.',
-    icon: '💻',
+    icon: SoftwareIcon,
     features: ['Vue 3 & TypeScript Frontend', 'Skalierbare Backend-Architekturen', 'REST & GraphQL APIs']
   },
   {
     id: 'cloud-devops',
     title: 'Cloud & DevOps Integration',
     description: 'Moderne Containerisierung und Deployment-Pipelines für eine zuverlässige und automatisierte Inbetriebsetzung.',
-    icon: '☁️',
+    icon: CloudIcon,
     features: ['Docker & Containerisierung', 'CI/CD Automation', 'Cloud-Deployment (AWS, Railway, Azure)']
   },
   {
     id: 'ui-ux-design',
     title: 'UI/UX & Prototyping',
     description: 'Benutzerfreundliche und reaktive Oberflächen, konzipiert mit modernem Design-Thinking.',
-    icon: '🎨',
+    icon: UiIcon,
     features: ['Figma Prototyping', 'Design Systems', 'Responsive Web Design']
   },
   {
     id: 'consulting',
     title: 'IT-Beratung & Architektur',
     description: 'Strategische Beratung zur Modernisierung Ihrer IT-Landschaft und Auswahl passender Tech-Stacks.',
-    icon: '🚀',
+    icon: ItIcon,
     features: ['Code-Audits & Refactoring', 'System-Architektur', 'Agile Methodik']
   }
 ]
@@ -68,7 +73,9 @@ const services: Service[] = [
               :key="service.id" 
               class="lise-service-card"
             >
-              <div class="lise-service-card__icon">{{ service.icon }}</div>
+              <div class="lise-service-card__icon">
+                <component :is="service.icon" />
+              </div>
               <h2 class="lise-service-card__title">{{ service.title }}</h2>
               <p class="lise-service-card__desc">{{ service.description }}</p>
               
