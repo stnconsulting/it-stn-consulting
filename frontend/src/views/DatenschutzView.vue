@@ -43,6 +43,8 @@ import MainFooter from '@/components/MainFooter.vue'
                 Märkischer Ring 92<br />
                 58097 Hagen<br />
                 Deutschland<br /><br />
+                <strong>Geschäftsführer:</strong> Stéphane Tatchum Noubissi<br />
+                <strong>Handelsregister:</strong> HRB 14085<br />
                 <strong>Telefon:</strong> 02331 - 4889720<br />
                 <strong>E-Mail:</strong> <a href="mailto:info@stnconsulting.de" class="lise-link">info@stnconsulting.de</a>
               </div>
