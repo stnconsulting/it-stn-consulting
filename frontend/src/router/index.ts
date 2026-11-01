@@ -59,6 +59,22 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
+    path: '/karriere',
+    name: 'karriere',
+    component: () => import('@/views/KarriereView.vue'),
+    meta: {
+      title: 'Karriere – STN ENTERPRISES GmbH',
+    },
+  },
+  {
+    path: '/job/:id',
+    name: 'jobview',
+    component: () => import('@/views/JobView.vue'),
+    meta: {
+      title: 'Stellenangebot – STN ENTERPRISES GmbH',
+    },
+  },
+  {
     path: '/ueber-uns',
     name: 'ueber-uns',
     component: () => import('@/views/AboutUsView.vue'),

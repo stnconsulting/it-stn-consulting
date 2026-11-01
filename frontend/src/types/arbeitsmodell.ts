@@ -1,0 +1,1 @@
+export type Arbeitsmodell = 'Ort' | 'Remote' | 'Hybrid'

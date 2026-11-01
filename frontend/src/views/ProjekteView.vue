@@ -5,15 +5,7 @@ import { theme } from '@/theme'
 import HeaderNavbar from '@/components/HeaderNavbar.vue'
 import MainFooter from '@/components/MainFooter.vue'
 
-interface Project {
-  id: string
-  title: string
-  category: 'web' | 'cloud' | 'custom'
-  categoryLabel: string
-  description: string
-  tags: string[]
-}
-
+import type { Project } from '@/types/project'
 const activeFilter = ref<'all' | 'web' | 'cloud' | 'custom'>('all')
 
 const projects: Project[] = [

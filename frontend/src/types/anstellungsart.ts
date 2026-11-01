@@ -1,0 +1,1 @@
+export type Anstellungsart = 'Festanstellung' | 'Werkvertrag' | 'Praktikum' | 'Freelance' | '';

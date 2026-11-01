@@ -32,6 +32,9 @@ const toggleMenu = () => {
             <RouterLink to="/projekte" class="lise-nav__link" @click="isMenuOpen = false">Projekte</RouterLink>
           </li>
           <li class="lise-nav__item">
+            <RouterLink to="/karriere" class="lise-nav__link" @click="isMenuOpen = false">Karriere</RouterLink>
+          </li>
+          <li class="lise-nav__item">
             <RouterLink to="/ueber-uns" class="lise-nav__link" @click="isMenuOpen = false">Über uns</RouterLink>
           </li>
           <li class="lise-nav__item">

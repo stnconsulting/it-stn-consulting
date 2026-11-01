@@ -1,0 +1,1 @@
+export type JobVolume = 'Vollzeit' | 'Teilzeit' | 'Minijob' | '';
