@@ -1,5 +1,7 @@
 
 <script setup lang="ts">
+import HeaderNavbar from '@/components/HeaderNavbar.vue'
+import MainFooter from '@/components/MainFooter.vue'
 import JobCard from '@/components/JobCard.vue'
 import { jobs } from '@/data/jobs'
 import theme from '@/theme'
@@ -19,7 +21,9 @@ const fontWeightSemibold = theme.typography.fontWeight.semibold
 </script>
 
 <template>
+  <HeaderNavbar />
   <main class="karriere-page">
+    
     <section class="karriere-header">
       <h1>Karriere</h1>
       <p>
@@ -41,7 +45,9 @@ const fontWeightSemibold = theme.typography.fontWeight.semibold
         />
       </div>
     </section>
+    
   </main>
+  <MainFooter companyName="STN ENTERPRISES GmbH" />
 </template>
 
 <style scoped>

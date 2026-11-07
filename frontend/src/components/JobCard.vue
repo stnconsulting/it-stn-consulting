@@ -16,16 +16,14 @@ defineProps<{
         {{ job.titel }}
       </h2>
 
-      <p class="job-description">
-        {{ job.beschreibung.profil_unternehmen }}
-      </p>
+    
 
       <div class="job-details">
         <span class="job-location">
           📍 {{ job.ort }}
         </span>
-
-        <span class="job-salary">
+       
+        <span v-if="job.gehalt" class="job-salary">
           {{ job.gehalt }}
         </span>
       </div>

@@ -152,6 +152,9 @@ const primary900 = theme.colors.primary[900]
           <span v-if="job.arbeitsmodell" class="meta-item">
             {{ job.arbeitsmodell }}
           </span>
+          <span v-if="job.zeitraum" class="meta-item">
+            ⏳ {{ job.zeitraum }}
+          </span>
 
           <span v-if="job.anstellungsart" class="meta-item">
             {{ job.anstellungsart }}
