@@ -294,7 +294,7 @@ export const jobs: Job[] = [
     `
   },
 
-  ort: "Remote",
+  ort: "Deutschland",
   gehalt: "",
   startdatum: "Ab sofort",
   referenz_link: "https://www.hays.de/jobsuche/stellenangebote-jobs-detail?p_p_id=de_hays_liferay_search_jobdetails_JobDetailsPortlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_de_hays_liferay_search_jobdetails_JobDetailsPortlet_jakarta.portlet.action=desktopApply&_de_hays_liferay_search_jobdetails_JobDetailsPortlet_prospectId=51A9AF0A-E87D-495E-AC35-7AF424303D6D&p_auth=XSvGPFyp"
