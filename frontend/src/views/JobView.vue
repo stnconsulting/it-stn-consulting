@@ -81,11 +81,11 @@ function parseContent(content: string): ContentBlock[] {
 // --------------------------------------------------
 // Contenu formaté
 // --------------------------------------------------
-
+/*
 const unternehmenContent = computed(() =>
   parseContent(job.value?.beschreibung.profil_unternehmen ?? '')
 )
-
+*/
 const aufgabenContent = computed(() =>
   parseContent(job.value?.beschreibung.aufgaben ?? '')
 )
@@ -175,6 +175,7 @@ const primary900 = theme.colors.primary[900]
       <div class="job-body">
 
         <!-- Présentation de l'entreprise -->
+        <!--
         <section
           v-if="unternehmenContent.length"
           class="job-section"

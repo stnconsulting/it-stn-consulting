@@ -8,7 +8,7 @@ interface Job {
   bild: string
   titel: string
   zeitraum?: string
-  arbeitsmodell: Arbeitsmodell
+  arbeitsmodell?: Arbeitsmodell
   anstellungsart: Anstellungsart
   job_volume: JobVolume
   beschreibung: Beschreibung
